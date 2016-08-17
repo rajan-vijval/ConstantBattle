@@ -86,7 +86,7 @@ header {
 .landing {
   position: relative;
   max-width: 1900px;
-  background-image: url(/ConstantBattle/images/real-back.jpg);
+  background-image: url(/rajan-vijval.github.io/images/real-back.jpg);
   background-length: 100vh 100vw;
   background-position: center bottom;
   background-attachment: fixed;
@@ -382,7 +382,7 @@ header .real-logo .fly-in-text .hidden {
   position: relative;
   max-height: 500vh;
   margin-bottom: 49vh;
-  background-image: url(/ConstantBattle/images/background.png);
+  background-image: url(/rajan-vijval.github.io/images/background.png);
   background-length: 100vh 100vw;
   background-position: center bottom;
   background-attachment: fixed;
