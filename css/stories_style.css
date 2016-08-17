@@ -1,0 +1,174 @@
+/*stories_sassy.scss*/
+body {
+  background-color: white;
+}
+
+#loader {
+  position: fixed;
+  z-index: 2000;
+  background-color: black;
+  height: 150vh;
+  width: 100vw;
+}
+
+.navigation-container {
+  position: fixed;
+  z-index: 1006;
+  list-style-type: none;
+  width: 100vw;
+  background-color: rgba(0, 0, 26, 0.8);
+  top: 0;
+}
+
+.navigation-container ul {
+  z-index: 2000;
+  margin-left: 0;
+  text-align: center;
+  margin-bottom: .25em;
+}
+
+.navigation-container ul li {
+  display: inline-block;
+  width: 15vw;
+  margin: 0;
+  text-align: center;
+}
+
+.navigation-container ul li a {
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  font-size: 60%;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.navigation-container ul li a:hover {
+  color: white;
+  text-decoration: underline;
+  font-size: 65%;
+}
+
+.intro {
+  position: relative;
+  overflow: hidden;
+}
+
+.intro h1 {
+  margin-top: 10vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #c2c2c2;
+  text-align: center;
+}
+
+.intro hr {
+  border-color: #c2c2c2;
+}
+
+#content {
+  background-color: white;
+}
+
+#body-wrapper {
+  background: white;
+  margin-bottom: 49vh;
+  padding: 2.5vh;
+  padding-bottom: 2.5vh;
+  max-height: 250vh;
+}
+
+#heading {
+  background: white;
+}
+
+.stories {
+  position: relative;
+  z-index: 1000;
+  background: #f5f5f5;
+  padding-top: 5vh;
+}
+
+.stories h3 {
+  text-align: center;
+  margin-bottom: 2.5vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.stories hr {
+  margin: 0;
+  border-color: black;
+  margin-bottom: 5vh;
+}
+
+.stories img {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  border-radius: 1%;
+}
+
+.stories #paragraph {
+  padding-left: 7vw;
+  padding-right: 7vw;
+}
+
+.stories p {
+  margin-top: 2.5vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3vmin;
+}
+
+.stories #share {
+  width: 100px;
+  margin: 0px auto;
+}
+
+footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 50vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 2vh;
+}
+
+footer h1 {
+  margin: 0;
+  margin-top: 5vh;
+}
+
+footer .row {
+  max-height: 50vh;
+  overflow: auto;
+  margin: 2.5vh;
+}
+
+.contact-list {
+  list-style-type: none;
+}
+
+.contact-list li {
+  margin-bottom: 0.75vh;
+}
+
+.contact-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  font-family: serif;
+}
+
+.contact-list li a:hover {
+  font-size: 1.25em;
+}
+
+.contact-list #phone a {
+  margin: 0;
+}
+
+.contact-list #phone a:hover {
+  font-size: 1em;
+}
