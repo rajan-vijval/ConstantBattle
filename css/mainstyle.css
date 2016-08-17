@@ -1,4 +1,7 @@
 /*aum mainsassy.scss*/
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+*{font-family: 'Montserrat'}
+
 #loader {
   position: fixed;
   z-index: 2000;
