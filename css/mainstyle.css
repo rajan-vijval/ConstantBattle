@@ -1,4 +1,7 @@
 /*aum mainsassy.scss*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+*{font-family: 'Open Sans'}
+
 #loader {
   position: fixed;
   z-index: 2000;
