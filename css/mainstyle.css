@@ -1,6 +1,6 @@
 /*aum mainsassy.scss*/
-@import 'https://fonts.googleapis.com/css?family=Open%20Sans';
-*{font-family: 'Open Sans'}
+@import 'https://fonts.googleapis.com/css?family=Lato';
+*{font-family: 'Lato'}
 
 #loader {
   position: fixed;
