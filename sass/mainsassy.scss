@@ -1,0 +1,622 @@
+/*aum mainsassy.scss*/
+
+//Variables
+$frameheight: 100vh;
+$framewidth: 100vw;
+
+//loader
+
+#loader {
+    position: fixed;
+    z-index: 2000;
+    background-color: black;
+    height: 10 * $frameheight;
+    width: $framewidth;
+}
+
+//General
+* {
+    margin: 0;
+}
+
+html, body {
+    font-family: Open Sans, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
+
+}
+
+body{
+    background: white;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    //color: #ccc;
+    font: {weight: 300}
+}
+
+//Navigation
+$just_right : #00001a;
+$header-back-color: transparentize($just_right, .2);
+$nice-white: transparentize(#b3b3b3, .2);
+
+.navigation-container {
+    position: fixed;
+    z-index: 1006;
+    list-style-type: none;
+    position: fixed;
+    width: $framewidth;
+    padding: 0;
+    ul {
+        z-index: 2000;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: .25em;
+        li {
+            display: inline-block;
+            width: .15 * $framewidth;
+            //border: 1px dashed blue;
+            margin: 0;
+            text-align: center;
+            a {
+                text-decoration: none;
+                color: lightgray;
+                text-decoration: none;
+                font-size: 60%;
+                font-family: 'Arial Narrow', Arial, sans-serif;
+                &:hover{
+                    color: white;
+                    text-decoration: underline;
+                    font-size: 60%;
+                }
+            }
+            
+        }
+    }
+}
+
+.background-special {
+    background-color: transparentize($just_right, .3);
+    &:hover {
+        background-color: $header-back-color;
+        color: white;
+    }
+}
+
+//header
+#all {
+    background-color: white;
+}
+
+header {
+    z-index: 1005;
+}
+
+.landing {
+    position: relative;
+    //height: 1.5 * $frameheight;
+    //overflow: hidden;
+    max-width: 1900px;
+    background: {
+        image: url(/images/real-back.jpg);
+        length: $frameheight $framewidth;
+        position: center bottom;
+        attachment: fixed;
+    }
+}
+
+#separate {
+    display: block;
+    //border: 1px dashed white;
+    text-align: center;
+    max-width: 1900px;
+    margin-right: 0;
+    margin-left: 0;
+    background: {
+        color: $nice-white;
+        height: $frameheight;
+        width: 100vw;
+
+    }
+    height:.5 * $frameheight;
+    color: white;
+}
+
+.logo {
+    height: .6 * $frameheight;
+    width: .4 * $framewidth;
+    background: {
+        position: center;
+        repeat: no-repeat;
+    }
+    position: absolute;
+    top: 30%;
+    left: .3 * $framewidth;
+}
+
+#carrot {
+    position: absolute;
+    height: 35px;
+    left: 48.5%;
+    top: .90 * $frameheight;
+    animation: bobble 2s infinite;
+    width: .008 * $framewidth;
+@keyframes bobble {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate3d(0px, 20px, 0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+}
+
+//logo
+header {
+    width: 100%;
+    .real-logo{
+    display: block;
+    //border: 1px dashed white;
+    text-align: center;
+    width: 5 * $framewidth;
+    margin-right: 0;
+    margin-left: 0;
+    background: {
+        color: $header-back-color;
+        height: $frameheight;
+        width: 5 * $framewidth;
+
+    }
+    height: $frameheight;
+    color: white;
+    max-width: 100%;
+    .fly-in-text {
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: .05 * $frameheight;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    li {
+        display: inline-block;
+        margin-right: .02 * $framewidth;
+        margin-top: .5 * $frameheight;
+        transition: all 2.35s ease-out;
+        opacity: .7;
+        font: {
+            family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            weight: bold;
+            size: 1.11em;
+            color: white;
+            }
+        &:last-child {
+            margin-right: 0;
+            }
+            }
+            .hidden {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.real-logo {
+    .hidden {
+        li {
+                opacity: 0;
+                &:nth-child(1) {transform: translateX(-.05 * $framewidth) translateY(.08 * $framewidth)}//c
+                &:nth-child(2) {transform: translateX(.04 * $framewidth) translateY(.095 * $framewidth)}//o
+                &:nth-child(3) {transform: translateX(-.04 * $framewidth) translateY(-.095 * $framewidth)}//n
+                &:nth-child(4) {transform: translateX(.075 * $framewidth) translateY(.05 * $framewidth)}//s
+                &:nth-child(5) {transform: translateX(-.08 * $framewidth) translateY(-.15 * $framewidth)}//t
+                &:nth-child(6) {transform: translateX(.07 * $framewidth) translateY(.012 * $framewidth)}//a
+                &:nth-child(7) {transform: translateX(.15 * $framewidth) translateY(-.04 * $framewidth)}//n
+                &:nth-child(8) {transform: translateX(-.12 * $framewidth) translateY(-.04 * $framewidth)}//t
+                &:nth-child(9) {transform: translateX(0px) translateY(0px)}
+                &:nth-child(10) {transform: translateX(-.455 * $framewidth) translateY(-.08 * $framewidth)}//}b
+                &:nth-child(11) {transform: translateX(-.12 * $framewidth) translateY(.13 * $framewidth)}//a
+                &:nth-child(12) {transform: translateX(-.09 * $framewidth) translateY(-.12 * $framewidth)}//t
+                &:nth-child(13) {transform: translateX(-.02 * $framewidth) translateY(-.02 * $framewidth)}//t
+                &:nth-child(14) {transform: translateX(-.04 * $framewidth) translateY(.08 * $framewidth)}//l
+                &:nth-child(15) {transform: translateX(.02* $framewidth) translateY(-.16 * $framewidth)}//e
+            }    
+        }
+}
+
+//Intro
+
+.intro {
+    text-align: center;
+    background: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: .05 * $frameheight;
+    position: relative;
+    z-index: 1;
+    h1 {
+        color: #c2c2c2;;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    hr {
+        border-color: #c2c2c2;
+    }
+    p {
+        width: 100%;
+        margin-bottom: 0;
+        font-size: 1em;
+        color: black;
+        text-align: justify;
+        text-align-last: center;
+        opacity: .9;
+    }
+}
+
+//Story Grid
+
+#features {
+    max-width: $framewidth;
+    background: white;
+    padding-top: .05 * $frameheight;
+    padding-bottom: .05 * $frameheight;
+    z-index: 999;
+    margin: .1em .25em .1em .25em;
+}
+
+.features {
+    position: relative;
+    z-index: 1004;
+    background: #f5f5f5;
+    vertical-align: center;
+    }
+    .row {
+        margin-right: 0;
+        padding: {
+            top: .05 * $frameheight;
+            right: .05 * $frameheight;
+            bottom: 0;
+            left: .05 * $frameheight;
+        }
+        hr {
+            $margin: 2.5%;
+            margin-left: $margin;
+            margin-right: $margin;
+        }
+    .post {
+        border: 1px solid gray;
+        background: white;
+        align-content: center;
+        text-align: center;
+        max-height: 1.5 * $frameheight;
+        border-radius: 1%;
+        transition: all .001s ease;
+        padding-left: .02 * $framewidth;
+        padding-right: .02 * $framewidth;
+        padding-top: .01 * $frameheight;
+        &:hover {
+            border: 1.5px solid black; 
+        }
+        &:nth-child(1) {
+            margin-bottom: .06 * $frameheight;
+        }
+        #contain {
+            width: 98%;
+            overflow: hidden;
+            vertical-align: middle;
+            margin-left: 1%;
+            img {
+                width: 100%;
+                transition: all 1s ease-in-out;
+                vertical-align: middle;
+                overflow: hidden;
+                border-radius: 1%;
+                margin-bottom: 2%;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        #date {
+            font: {
+            family: /*'Franklin Gothic Medium',*/ 'Arial Narrow', Arial, sans-serif;
+            weight: bold;
+            }
+        }
+        #caption {
+            width: 90%;
+            text-align-last: center;
+            margin: 10px auto 20px auto;
+            font: {
+                family: Georgia, 'Times New Roman', Times, serif;
+                size: 105%;
+            }
+        }
+    }
+    .post-3 {
+        margin-top: 0;
+    }
+    }
+
+    #post-more {
+        align-content: center;
+        margin-top: .3 * $frameheight;
+        margin-bottom: .3 * $frameheight;
+        border-width: 0px;
+        background: transparent;
+        &:hover {
+            border-width: 0px;
+        }
+    }
+
+//partners
+.partners {
+    position: relative;
+    max-height: 5 * $frameheight;
+    //overflow: hidden;
+    margin-bottom: .49 * $frameheight;
+    background: {
+        image: url(/images/background.png);
+        length: $frameheight $framewidth;
+        position: center bottom;
+        attachment: fixed;
+        repeat: none;
+    }
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    hr {
+        margin-top: .015 * $frameheight;
+        margin-bottom: .035 * $frameheight;
+    }
+    .opener1 {
+        margin-bottom: .015 * $frameheight;
+    }
+    .layer {
+        display: block;
+        //border: 1px dashed white;
+        background: white;
+        text-align: center;
+        max-width: $framewidth;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: .05 * $frameheight;
+        max-height: 5 * $frameheight;
+        background: {
+            color: $header-back-color;
+            max-height: 5 * $frameheight;
+            width: 100vw;
+
+        }
+        color: white;
+        max-width: 100%;
+        h1 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .partner-rows {
+            margin: 0 auto;
+            margin-bottom: .03 * $framewidth;
+            max-height: 5 * $frameheight;
+            overflow: hidden;
+            .square {
+                display: inline-block;
+                border: 1px solid white;
+                height: 35vmin;
+                width: 35vmin;
+                padding: 0;
+                overflow: hidden;
+                background: black;
+                transition: transform .2s ease-in-out;
+                &:nth-child(1) {
+                    margin-right: .015 * $framewidth;
+                }
+                &:nth-child(2) {
+                    margin-left: .015 * $framewidth;
+                }
+
+                /*#name {
+                    //border: 1px dashed white;
+                    margin: 0 auto;
+                    margin-left: 1vmin;
+                    margin-right: 1vmin;
+                    margin-top: 45%;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    padding: 0;
+                }*/
+                
+                .wrapper {
+                position: relative;
+                transform: translate3d(0px, 0px, 0px);
+                transition: transform .75s ease-out;
+                height: 70vmin;
+                width: 35vmin;
+
+                #square1 {
+                    background-color: black;
+                    margin: 0;
+                    height: 70vmin;
+                    width: 35vmin;
+                    padding: 0 auto;
+
+                    #name {
+                        position: absolute;
+                        width: 90%;
+                        margin-top: 5%;
+                        margin-left: 5%;
+                        font: {
+                            family: 'Times New Roman', Times, serif;
+                            size: 2.7vmin;
+                        }
+                    }
+
+                    #cause {
+                        position: absolute;
+                        width: 100%;
+                        //border: 1px dashed white;
+                        text-align: center;
+                        margin-top: 45%;
+                        font: {
+                            family: Times, serif;
+                            size: 2.4vmin;
+                        }                        
+                    }
+                }
+                #square2 {
+                    background-color: lightgray;
+                    margin: 0;
+                    height: 70vmin;
+                    width: 35vmin;
+                    color: black;
+                    ul {
+                        list-style-type: none;
+                        text-align: left;
+                        width: 35vmin;
+                        float: none;
+                        li {
+                            background-color: lightgray;
+                            margin: 0;
+                                font: {
+                                    family: "Cambria, Cochin, Georgia, Times, Times New Roman, serif";
+                                    size: 2.7vmin;
+                                    border: 1px dashed black;
+                                    }
+                            a {
+                                text-decoration: none;
+                                color: black;
+                                &:hover {
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        #location {
+                            text-align: center;
+                            text-decoration: underline;
+                            font: {
+                                family: Courier New, Courier New, Courier6, monospace;
+                                size: 2vmin;
+                                weight: bold;
+                            }
+                        }
+                        .mission {
+                            width: 100%;
+                            font-size: 2.35vmin;
+                            font-family: Palatino Linotype;
+                            text-align: justify;
+                            p {
+                                margin: 2% 3% 2% 3%;
+                                text-align: left;
+                                text-align-last: left;
+                            }
+                        }
+
+                        #website {
+                            text-align: center;
+                            text-transform: lowercase;
+                            font-size: 2vmin;
+                            margin-top: 0;
+                            font-family: Courier New, Courier, monospace;
+                            position: absolute;
+                            font-weight: 600;
+                            //top: 140%;
+                            bottom: -49.5%;
+                            width: 100%;
+                            text-align: center;
+                            background-color: $header-back-color;
+                            &:hover {
+                                background-color: $just-right;
+                                a {
+                                    color: white;
+                                }
+                            }
+                            a {
+                                color: wheat;
+
+                                }
+                            }
+                        }
+                    }
+                &:hover {
+                    transform: translateY(-100%)
+                    }
+                }
+            }
+            .square-1 {transform: translate(-.05 * $framewidth, -.05 * $framewidth)}
+            .square-2{transform: translate(.05 * $framewidth, -.05 * $framewidth)}
+            .square-3 {transform: translate(-.05 * $framewidth, .05 * $framewidth)}
+            .square-4 {transform: translate(.05 * $framewidth, .05 * $framewidth)}    
+            }
+        }
+    }
+
+
+
+#mission {
+    width: 90%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: center;
+    font-size: .95em;
+}
+
+//footer
+
+footer {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    width: $framewidth;
+    height: .5 * $frameheight;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0;
+    h1 {
+        margin: 0;
+        margin-top: .05 * $frameheight;
+        margin-left: .015 * $frameheight;
+    }
+    .row {
+        max-height: .5 * $frameheight;
+        overflow: auto;
+        margin: .025 * $frameheight;
+        margin-top: 0;
+    }
+}
+
+.contact-list {
+    list-style-type: none;
+    margin-top: 0;
+
+    li {
+        margin-bottom: .001 * $frameheight;
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+            font-family: serif;
+
+            &:hover {
+                font-size: 1.25em;
+            }
+        }
+    }
+    #phone {
+        a {
+            margin: 0;
+            &:hover {
+                font-size: 1em;
+            }
+            
+        }
+    }
+}
