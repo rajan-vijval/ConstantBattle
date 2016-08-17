@@ -145,15 +145,13 @@ header {
 header .real-logo {
   display: block;
   text-align: center;
-  width: 500vw;
   margin-right: 0;
   margin-left: 0;
   background-color: rgba(0, 0, 26, 0.8);
   background-height: 100vh;
-  background-width: 500vw;
+  background-width: 100vw;
   height: 100vh;
   color: white;
-  max-width: 50000000000000000px;
 }
 
 header .real-logo .fly-in-text {
