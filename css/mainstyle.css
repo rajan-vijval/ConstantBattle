@@ -1,6 +1,6 @@
 /*aum mainsassy.scss*/
-@import 'https://fonts.googleapis.com/css?family=PT%20Sans';
-*{font-family: 'PT Sans'}
+@import 'https://fonts.googleapis.com/css?family=Lora';
+*{font-family: 'Lora'}
 
 #loader {
   position: fixed;
