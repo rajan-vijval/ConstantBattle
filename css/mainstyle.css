@@ -388,6 +388,7 @@ header .real-logo .fly-in-text .hidden {
   background-position: center bottom;
   background-attachment: fixed;
   background-repeat: none;
+  background-size: fill;
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 0;
 }
