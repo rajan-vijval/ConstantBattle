@@ -85,11 +85,12 @@ header {
 
 .landing {
   position: relative;
-  max-width: 1900px;
+  max-width: 50000000000px;
   background-image: url(/rajan-vijval.github.io/images/real-back.jpg);
   background-length: 100vh 100vw;
   background-position: center bottom;
   background-attachment: fixed;
+  background-repeat: none;
 }
 
 #separate {
