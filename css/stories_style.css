@@ -73,7 +73,7 @@ body {
   margin-bottom: 49vh;
   padding: 2.5vh;
   padding-bottom: 2.5vh;
-  max-height: 250vh;
+  height: contain;
 }
 
 #heading {
