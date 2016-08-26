@@ -1,20 +1,22 @@
 /*aum mainsassy.scss*/
-@import 'https://fonts.googleapis.com/css?family=Droid%20Serif';
-*{font-family: 'Droid Serif'}
+@import "https://fonts.googleapis.com/css?family=Droid%20Serif";
+* {
+  font-family: 'Droid Serif';
+}
 
 #loader {
   position: fixed;
   z-index: 2000;
   background-color: black;
-  height: 1000vh;
-  width: 100vw;
+  height: 1000%;
+  width: 100%;
 }
 
 * {
   margin: 0;
 }
 
-html, body {
+html {
   font-family: Open Sans, sans-serif;
   height: 100%;
   margin: 0;
@@ -23,6 +25,11 @@ html, body {
 }
 
 body {
+  font-family: Open Sans, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
   background: white;
   position: relative;
   z-index: 2;
@@ -37,7 +44,7 @@ h1 {
   z-index: 1006;
   list-style-type: none;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   padding: 0;
 }
 
@@ -50,7 +57,7 @@ h1 {
 
 .navigation-container ul li {
   display: inline-block;
-  width: 15vw;
+  width: 15%;
   margin: 0;
   text-align: center;
 }
@@ -102,29 +109,29 @@ header {
   margin-right: 0;
   margin-left: 0;
   background-color: rgba(179, 179, 179, 0.8);
-  background-height: 100vh;
-  background-width: 100vw;
+  background-height: 100%;
+  background-width: 100%;
   height: 50vh;
   color: white;
 }
 
 .logo {
-  height: 60vh;
-  width: 40vw;
+  height: 60%;
+  width: 40%;
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
   top: 30%;
-  left: 30vw;
+  left: 30%;
 }
 
 #carrot {
   position: absolute;
   height: 35px;
   left: 48.5%;
-  top: 90vh;
+  top: 90%;
   animation: bobble 2s infinite;
-  width: 0.8vw;
+  width: 0.8%;
 }
 
 @keyframes bobble {
@@ -152,7 +159,7 @@ header .real-logo {
   margin-left: 0;
   background-color: rgba(0, 0, 26, 0.8);
   background-height: 100vh;
-  background-width: 100vw;
+  background-width: 100%;
   height: 100vh;
   color: white;
 }
@@ -213,7 +220,7 @@ header .real-logo .fly-in-text .hidden {
 }
 
 .real-logo .hidden li:nth-child(6) {
-  transform: translateX(7vw) translateY(1.2vw);
+  transform: translateX(7vw) translateY(-1.2vw);
 }
 
 .real-logo .hidden li:nth-child(7) {
@@ -317,8 +324,8 @@ header .real-logo .fly-in-text .hidden {
   max-height: 150vh;
   border-radius: 1%;
   transition: all .001s ease;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 2vh;
+  padding-right: 2vh;
   padding-top: 1vh;
 }
 
@@ -405,7 +412,7 @@ header .real-logo .fly-in-text .hidden {
   display: block;
   background: white;
   text-align: center;
-  max-width: 100vw;
+  max-width: 1 100vw;
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 5vh;
@@ -445,7 +452,7 @@ header .real-logo .fly-in-text .hidden {
 }
 
 .partners .layer .partner-rows .square:nth-child(2) {
-  margin-left: 1.5vw;
+  margin-left: 1.5vh;
 }
 
 .partners .layer .partner-rows .square .wrapper {
