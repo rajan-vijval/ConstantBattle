@@ -200,35 +200,35 @@ header .real-logo .fly-in-text .hidden {
 }
 
 .real-logo .hidden li:nth-child(1) {
-  transform: translateX(-5vw) translateY(8vw);
+  transform: translateX(-5%) translateY(8%);
 }
 
 .real-logo .hidden li:nth-child(2) {
-  transform: translateX(4vw) translateY(9.5vw);
+  transform: translateX(4%) translateY(9.5%);
 }
 
 .real-logo .hidden li:nth-child(3) {
-  transform: translateX(-4vw) translateY(-9.5vw);
+  transform: translateX(-4%) translateY(-9.5%);
 }
 
 .real-logo .hidden li:nth-child(4) {
-  transform: translateX(7.5vw) translateY(5vw);
+  transform: translateX(7.5%) translateY(5%);
 }
 
 .real-logo .hidden li:nth-child(5) {
-  transform: translateX(-8vw) translateY(-15vw);
+  transform: translateX(-8%) translateY(-15%);
 }
 
 .real-logo .hidden li:nth-child(6) {
-  transform: translateX(7vw) translateY(-1.2vw);
+  transform: translateX(7%) translateY(-1.2%);
 }
 
 .real-logo .hidden li:nth-child(7) {
-  transform: translateX(15vw) translateY(-4vw);
+  transform: translateX(15%) translateY(-4%);
 }
 
 .real-logo .hidden li:nth-child(8) {
-  transform: translateX(-12vw) translateY(-4vw);
+  transform: translateX(-12%) translateY(-4%);
 }
 
 .real-logo .hidden li:nth-child(9) {
@@ -236,27 +236,27 @@ header .real-logo .fly-in-text .hidden {
 }
 
 .real-logo .hidden li:nth-child(10) {
-  transform: translateX(-45.5vw) translateY(-8vw);
+  transform: translateX(-45.5%) translateY(-8%);
 }
 
 .real-logo .hidden li:nth-child(11) {
-  transform: translateX(-12vw) translateY(13vw);
+  transform: translateX(-12%) translateY(13%);
 }
 
 .real-logo .hidden li:nth-child(12) {
-  transform: translateX(-9vw) translateY(-12vw);
+  transform: translateX(-9%) translateY(-12%);
 }
 
 .real-logo .hidden li:nth-child(13) {
-  transform: translateX(-2vw) translateY(-2vw);
+  transform: translateX(-2%) translateY(-2%);
 }
 
 .real-logo .hidden li:nth-child(14) {
-  transform: translateX(-4vw) translateY(8vw);
+  transform: translateX(-4%) translateY(8%);
 }
 
 .real-logo .hidden li:nth-child(15) {
-  transform: translateX(2vw) translateY(-16vw);
+  transform: translateX(2%) translateY(-16%);
 }
 
 .intro {
@@ -288,10 +288,10 @@ header .real-logo .fly-in-text .hidden {
 }
 
 #features {
-  max-width: 100vw;
+  max-width: 100%;
   background: white;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
   z-index: 999;
   margin: .1em .25em .1em .25em;
 }
@@ -305,10 +305,10 @@ header .real-logo .fly-in-text .hidden {
 
 .row {
   margin-right: 0;
-  padding-top: 5vh;
-  padding-right: 5vh;
+  padding-top: 5%;
+  padding-right: 5%;
   padding-bottom: 0;
-  padding-left: 5vh;
+  padding-left: 5%;
 }
 
 .row hr {
@@ -321,12 +321,12 @@ header .real-logo .fly-in-text .hidden {
   background: white;
   align-content: center;
   text-align: center;
-  max-height: 150vh;
+  max-height: 150%;
   border-radius: 1%;
   transition: all .001s ease;
-  padding-left: 2vh;
-  padding-right: 2vh;
-  padding-top: 1vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
 }
 
 .row .post:hover {
@@ -334,7 +334,7 @@ header .real-logo .fly-in-text .hidden {
 }
 
 .row .post:nth-child(1) {
-  margin-bottom: 6vh;
+  margin-bottom: 6%;
 }
 
 .row .post #contain {
@@ -376,8 +376,8 @@ header .real-logo .fly-in-text .hidden {
 
 #post-more {
   align-content: center;
-  margin-top: 30vh;
-  margin-bottom: 30vh;
+  margin-top: 30%;
+  margin-bottom: 30%;
   border-width: 0px;
   background: transparent;
 }
@@ -391,7 +391,7 @@ header .real-logo .fly-in-text .hidden {
   max-height: 500vh;
   margin-bottom: 49vh;
   background-image: url(/images/background.png);
-  background-length: 100vh 100vw;
+  background-length: 100% 100%;
   background-position: center bottom;
   background-attachment: fixed;
   background-repeat: none;
@@ -400,26 +400,26 @@ header .real-logo .fly-in-text .hidden {
 }
 
 .partners hr {
-  margin-top: 1.5vh;
-  margin-bottom: 3.5vh;
+  margin-top: 1.5%;
+  margin-bottom: 3.5%;
 }
 
 .partners .opener1 {
-  margin-bottom: 1.5vh;
+  margin-bottom: 1.5%;
 }
 
 .partners .layer {
   display: block;
   background: white;
   text-align: center;
-  max-width: 1 100vw;
+  max-width: 1 100%;
   margin-right: 0;
   margin-left: 0;
-  margin-bottom: 5vh;
-  max-height: 500vh;
+  margin-bottom: 5%;
+  max-height: 500%;
   background-color: rgba(0, 0, 26, 0.8);
-  background-max-height: 500vh;
-  background-width: 100vw;
+  background-max-height: 500%;
+  background-width: 100%;
   color: white;
   max-width: 100%;
 }
@@ -431,8 +431,8 @@ header .real-logo .fly-in-text .hidden {
 
 .partners .layer .partner-rows {
   margin: 0 auto;
-  margin-bottom: 3vw;
-  max-height: 500vh;
+  margin-bottom: 3%;
+  max-height: 500%;
   overflow: hidden;
 }
 
@@ -448,11 +448,11 @@ header .real-logo .fly-in-text .hidden {
 }
 
 .partners .layer .partner-rows .square:nth-child(1) {
-  margin-right: 1.5vw;
+  margin-right: 1.5%;
 }
 
 .partners .layer .partner-rows .square:nth-child(2) {
-  margin-left: 1.5vh;
+  margin-left: 1.5%;
 }
 
 .partners .layer .partner-rows .square .wrapper {
@@ -573,19 +573,19 @@ header .real-logo .fly-in-text .hidden {
 }
 
 .partners .layer .partner-rows .square-1 {
-  transform: translate(-5vw, -5vw);
+  transform: translate(-5%, -5%);
 }
 
 .partners .layer .partner-rows .square-2 {
-  transform: translate(5vw, -5vw);
+  transform: translate(5%, -5%);
 }
 
 .partners .layer .partner-rows .square-3 {
-  transform: translate(-5vw, 5vw);
+  transform: translate(-5%, 5%);
 }
 
 .partners .layer .partner-rows .square-4 {
-  transform: translate(5vw, 5vw);
+  transform: translate(5%, 5%);
 }
 
 #mission {
@@ -602,22 +602,22 @@ footer {
   position: fixed;
   bottom: 0;
   z-index: -1;
-  width: 100vw;
-  height: 50vh;
+  width: 100%;
+  height: 50%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-top: 0;
 }
 
 footer h1 {
   margin: 0;
-  margin-top: 5vh;
-  margin-left: 1.5vh;
+  margin-top: 5%;
+  margin-left: 1.5%;
 }
 
 footer .row {
-  max-height: 50vh;
+  max-height: 50%;
   overflow: auto;
-  margin: 2.5vh;
+  margin: 2.5%;
   margin-top: 0;
 }
 
@@ -627,7 +627,7 @@ footer .row {
 }
 
 .contact-list li {
-  margin-bottom: 0.1vh;
+  margin-bottom: 0.1%;
 }
 
 .contact-list li a {
@@ -647,4 +647,8 @@ footer .row {
 
 .contact-list #phone a:hover {
   font-size: 1em;
+}
+
+p {
+  background: white;
 }
