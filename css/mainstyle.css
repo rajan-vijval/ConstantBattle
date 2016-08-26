@@ -1,22 +1,22 @@
+/*old mainstle.css*/
+
 /*aum mainsassy.scss*/
-@import "https://fonts.googleapis.com/css?family=Droid%20Serif";
-* {
-  font-family: 'Droid Serif';
-}
+@import 'https://fonts.googleapis.com/css?family=Droid%20Serif';
+*{font-family: 'Droid Serif'}
 
 #loader {
   position: fixed;
   z-index: 2000;
   background-color: black;
-  height: 1000%;
-  width: 100%;
+  height: 1000vh;
+  width: 100vw;
 }
 
 * {
   margin: 0;
 }
 
-html {
+html, body {
   font-family: Open Sans, sans-serif;
   height: 100%;
   margin: 0;
@@ -25,11 +25,6 @@ html {
 }
 
 body {
-  font-family: Open Sans, sans-serif;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
   background: white;
   position: relative;
   z-index: 2;
@@ -44,7 +39,7 @@ h1 {
   z-index: 1006;
   list-style-type: none;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   padding: 0;
 }
 
@@ -57,7 +52,7 @@ h1 {
 
 .navigation-container ul li {
   display: inline-block;
-  width: 15%;
+  width: 15vw;
   margin: 0;
   text-align: center;
 }
@@ -109,29 +104,29 @@ header {
   margin-right: 0;
   margin-left: 0;
   background-color: rgba(179, 179, 179, 0.8);
-  background-height: 100%;
-  background-width: 100%;
+  background-height: 100vh;
+  background-width: 100vw;
   height: 50vh;
   color: white;
 }
 
 .logo {
-  height: 60%;
-  width: 40%;
+  height: 60vh;
+  width: 40vw;
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
   top: 30%;
-  left: 30%;
+  left: 30vw;
 }
 
 #carrot {
   position: absolute;
   height: 35px;
   left: 48.5%;
-  top: 90%;
+  top: 90vh;
   animation: bobble 2s infinite;
-  width: 0.8%;
+  width: 0.8vw;
 }
 
 @keyframes bobble {
@@ -159,7 +154,7 @@ header .real-logo {
   margin-left: 0;
   background-color: rgba(0, 0, 26, 0.8);
   background-height: 100vh;
-  background-width: 100%;
+  background-width: 100vw;
   height: 100vh;
   color: white;
 }
@@ -200,35 +195,35 @@ header .real-logo .fly-in-text .hidden {
 }
 
 .real-logo .hidden li:nth-child(1) {
-  transform: translateX(-5%) translateY(8%);
+  transform: translateX(-5vw) translateY(8vw);
 }
 
 .real-logo .hidden li:nth-child(2) {
-  transform: translateX(4%) translateY(9.5%);
+  transform: translateX(4vw) translateY(9.5vw);
 }
 
 .real-logo .hidden li:nth-child(3) {
-  transform: translateX(-4%) translateY(-9.5%);
+  transform: translateX(-4vw) translateY(-9.5vw);
 }
 
 .real-logo .hidden li:nth-child(4) {
-  transform: translateX(7.5%) translateY(5%);
+  transform: translateX(7.5vw) translateY(5vw);
 }
 
 .real-logo .hidden li:nth-child(5) {
-  transform: translateX(-8%) translateY(-15%);
+  transform: translateX(-8vw) translateY(-15vw);
 }
 
 .real-logo .hidden li:nth-child(6) {
-  transform: translateX(7%) translateY(-1.2%);
+  transform: translateX(7vw) translateY(1.2vw);
 }
 
 .real-logo .hidden li:nth-child(7) {
-  transform: translateX(15%) translateY(-4%);
+  transform: translateX(15vw) translateY(-4vw);
 }
 
 .real-logo .hidden li:nth-child(8) {
-  transform: translateX(-12%) translateY(-4%);
+  transform: translateX(-12vw) translateY(-4vw);
 }
 
 .real-logo .hidden li:nth-child(9) {
@@ -236,27 +231,27 @@ header .real-logo .fly-in-text .hidden {
 }
 
 .real-logo .hidden li:nth-child(10) {
-  transform: translateX(-45.5%) translateY(-8%);
+  transform: translateX(-45.5vw) translateY(-8vw);
 }
 
 .real-logo .hidden li:nth-child(11) {
-  transform: translateX(-12%) translateY(13%);
+  transform: translateX(-12vw) translateY(13vw);
 }
 
 .real-logo .hidden li:nth-child(12) {
-  transform: translateX(-9%) translateY(-12%);
+  transform: translateX(-9vw) translateY(-12vw);
 }
 
 .real-logo .hidden li:nth-child(13) {
-  transform: translateX(-2%) translateY(-2%);
+  transform: translateX(-2vw) translateY(-2vw);
 }
 
 .real-logo .hidden li:nth-child(14) {
-  transform: translateX(-4%) translateY(8%);
+  transform: translateX(-4vw) translateY(8vw);
 }
 
 .real-logo .hidden li:nth-child(15) {
-  transform: translateX(2%) translateY(-16%);
+  transform: translateX(2vw) translateY(-16vw);
 }
 
 .intro {
@@ -288,10 +283,10 @@ header .real-logo .fly-in-text .hidden {
 }
 
 #features {
-  max-width: 100%;
+  max-width: 100vw;
   background: white;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   z-index: 999;
   margin: .1em .25em .1em .25em;
 }
@@ -305,10 +300,10 @@ header .real-logo .fly-in-text .hidden {
 
 .row {
   margin-right: 0;
-  padding-top: 5%;
-  padding-right: 5%;
+  padding-top: 5vh;
+  padding-right: 5vh;
   padding-bottom: 0;
-  padding-left: 5%;
+  padding-left: 5vh;
 }
 
 .row hr {
@@ -321,12 +316,12 @@ header .real-logo .fly-in-text .hidden {
   background: white;
   align-content: center;
   text-align: center;
-  max-height: 150%;
+  max-height: 150vh;
   border-radius: 1%;
   transition: all .001s ease;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-top: 1%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vh;
 }
 
 .row .post:hover {
@@ -334,7 +329,7 @@ header .real-logo .fly-in-text .hidden {
 }
 
 .row .post:nth-child(1) {
-  margin-bottom: 6%;
+  margin-bottom: 6vh;
 }
 
 .row .post #contain {
@@ -376,8 +371,8 @@ header .real-logo .fly-in-text .hidden {
 
 #post-more {
   align-content: center;
-  margin-top: 30%;
-  margin-bottom: 30%;
+  margin-top: 30vh;
+  margin-bottom: 30vh;
   border-width: 0px;
   background: transparent;
 }
@@ -391,7 +386,7 @@ header .real-logo .fly-in-text .hidden {
   max-height: 500vh;
   margin-bottom: 49vh;
   background-image: url(/images/background.png);
-  background-length: 100% 100%;
+  background-length: 100vh 100vw;
   background-position: center bottom;
   background-attachment: fixed;
   background-repeat: none;
@@ -400,26 +395,26 @@ header .real-logo .fly-in-text .hidden {
 }
 
 .partners hr {
-  margin-top: 1.5%;
-  margin-bottom: 3.5%;
+  margin-top: 1.5vh;
+  margin-bottom: 3.5vh;
 }
 
 .partners .opener1 {
-  margin-bottom: 1.5%;
+  margin-bottom: 1.5vh;
 }
 
 .partners .layer {
   display: block;
   background: white;
   text-align: center;
-  max-width: 1 100%;
+  max-width: 100vw;
   margin-right: 0;
   margin-left: 0;
-  margin-bottom: 5%;
-  max-height: 500%;
+  margin-bottom: 5vh;
+  max-height: 500vh;
   background-color: rgba(0, 0, 26, 0.8);
-  background-max-height: 500%;
-  background-width: 100%;
+  background-max-height: 500vh;
+  background-width: 100vw;
   color: white;
   max-width: 100%;
 }
@@ -431,8 +426,8 @@ header .real-logo .fly-in-text .hidden {
 
 .partners .layer .partner-rows {
   margin: 0 auto;
-  margin-bottom: 3%;
-  max-height: 500%;
+  margin-bottom: 3vw;
+  max-height: 500vh;
   overflow: hidden;
 }
 
@@ -448,11 +443,11 @@ header .real-logo .fly-in-text .hidden {
 }
 
 .partners .layer .partner-rows .square:nth-child(1) {
-  margin-right: 1.5%;
+  margin-right: 1.5vw;
 }
 
 .partners .layer .partner-rows .square:nth-child(2) {
-  margin-left: 1.5%;
+  margin-left: 1.5vw;
 }
 
 .partners .layer .partner-rows .square .wrapper {
@@ -573,19 +568,19 @@ header .real-logo .fly-in-text .hidden {
 }
 
 .partners .layer .partner-rows .square-1 {
-  transform: translate(-5%, -5%);
+  transform: translate(-5vw, -5vw);
 }
 
 .partners .layer .partner-rows .square-2 {
-  transform: translate(5%, -5%);
+  transform: translate(5vw, -5vw);
 }
 
 .partners .layer .partner-rows .square-3 {
-  transform: translate(-5%, 5%);
+  transform: translate(-5vw, 5vw);
 }
 
 .partners .layer .partner-rows .square-4 {
-  transform: translate(5%, 5%);
+  transform: translate(5vw, 5vw);
 }
 
 #mission {
@@ -602,22 +597,22 @@ footer {
   position: fixed;
   bottom: 0;
   z-index: -1;
-  width: 100%;
-  height: 50%;
+  width: 100vw;
+  height: 50vh;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-top: 0;
 }
 
 footer h1 {
   margin: 0;
-  margin-top: 5%;
-  margin-left: 1.5%;
+  margin-top: 5vh;
+  margin-left: 1.5vh;
 }
 
 footer .row {
-  max-height: 50%;
+  max-height: 50vh;
   overflow: auto;
-  margin: 2.5%;
+  margin: 2.5vh;
   margin-top: 0;
 }
 
@@ -627,7 +622,7 @@ footer .row {
 }
 
 .contact-list li {
-  margin-bottom: 0.1%;
+  margin-bottom: 0.1vh;
 }
 
 .contact-list li a {
@@ -647,8 +642,4 @@ footer .row {
 
 .contact-list #phone a:hover {
   font-size: 1em;
-}
-
-p {
-  background: white;
 }
